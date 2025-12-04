@@ -99,6 +99,7 @@ fun DemoSlider(sliderPosition: Float, onPositionChange: (Float) -> Unit ) {
 @Composable
 fun DemoTextPreview() {
     ComposeDemoTheme {
+        DemoText(message = "Welcome to Android", fontSize = 12f)
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
             DemoScreen(modifier = Modifier.padding(innerPadding))
         }
